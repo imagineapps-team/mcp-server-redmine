@@ -36,7 +36,7 @@ function loadConfig(): Config {
       host: process.env.REDMINE_HOST,
     },
     server: {
-      name: process.env.SERVER_NAME ?? "@yonaka15/mcp-server-redmine",
+      name: process.env.SERVER_NAME ?? "@imagineapps-team/mcp-server-redmine",
       version: process.env.SERVER_VERSION ?? "0.1.0",
     },
   });
