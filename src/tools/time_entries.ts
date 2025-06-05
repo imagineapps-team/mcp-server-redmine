@@ -30,7 +30,7 @@ export const TIME_ENTRY_LIST_TOOL: Tool = {
       },
       to: {
         type: "string",
-        description: "Show entries until this date in YYYY-MM-DD format", 
+        description: "Show entries until this date in YYYY-MM-DD format",
         pattern: "^\\d{4}-\\d{2}-\\d{2}$"
       },
       offset: {
@@ -97,7 +97,7 @@ export const TIME_ENTRY_CREATE_TOOL: Tool = {
         type: "number",
         description: "Number of hours spent. Can use decimals",
         minimum: 0,
-        exclusiveMinimum: true
+        exclusiveMinimum: true,
       },
       activity_id: {
         type: "number",
@@ -113,11 +113,7 @@ export const TIME_ENTRY_CREATE_TOOL: Tool = {
         description: "Log time for this user ID. Requires admin rights"
       }
     },
-    required: ["hours"],
-    oneOf: [
-      { required: ["project_id"] },
-      { required: ["issue_id"] }
-    ]
+    required: ["hours"]
   }
 };
 
