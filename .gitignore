@@ -127,3 +127,6 @@ out
 
 # Build output
 dist/
+
+# Jetbrains IDEs
+.idea
